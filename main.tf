@@ -28,7 +28,7 @@ module "frontend" {
 
 module "backend" {
   source = "./modules/backend"
-  main_rg=var.main_rg
+  # main_rg=var.main_rg
   rg_backend_name=azurerm_resource_group.nishant_rg.name
   location=azurerm_resource_group.nishant_rg.location
 }
